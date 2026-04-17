@@ -19,6 +19,12 @@ pub enum CoreError {
     
     #[error("Internal domain error: {0}")]
     Internal(String),
+
+    #[error("Unauthorized: {0}")]
+    Unauthorized(String),
+
+    #[error("Invalid token: {0}")]
+    InvalidToken(String),
 }
 
 pub type Result<T> = std::result::Result<T, CoreError>;

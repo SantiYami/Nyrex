@@ -1,0 +1,67 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n            INSERT INTO users (id, email, password_hash, display_name, created_at, updated_at)\n            VALUES ($1, $2, $3, $4, NOW(), NOW())\n            RETURNING *\n            ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Uuid"
+      },
+      {
+        "ordinal": 1,
+        "name": "email",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 2,
+        "name": "display_name",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 3,
+        "name": "sso_provider",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 4,
+        "name": "sso_sub",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 5,
+        "name": "created_at",
+        "type_info": "Timestamptz"
+      },
+      {
+        "ordinal": 6,
+        "name": "updated_at",
+        "type_info": "Timestamptz"
+      },
+      {
+        "ordinal": 7,
+        "name": "password_hash",
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Uuid",
+        "Varchar",
+        "Text",
+        "Varchar"
+      ]
+    },
+    "nullable": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "5da1bf4f3051f38dc784f5baaac17d583f3f06e3d9951b6f3836fe60ebf03bd2"
+}

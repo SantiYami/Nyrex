@@ -7,6 +7,9 @@ use nyrex_core::traits::NoteStore;
 use sqlx::PgPool;
 use uuid::Uuid;
 
+pub mod auth;
+pub use auth::PgAuthStore;
+
 pub struct PgNyrexStore {
     pool: PgPool,
 }

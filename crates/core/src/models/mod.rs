@@ -11,11 +11,63 @@ use sqlx::FromRow;
 pub struct User {
     pub id: Uuid,
     pub email: String,
+    pub password_hash: String,
     pub display_name: Option<String>,
     pub sso_provider: Option<String>,
     pub sso_sub: Option<String>,
     pub created_at: DateTime<Utc>,
     pub updated_at: DateTime<Utc>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, FromRow)]
+pub struct RefreshToken {
+    pub id: Uuid,
+    pub user_id: Uuid,
+    pub token_hash: String,
+    pub expires_at: DateTime<Utc>,
+    pub revoked: bool,
+    pub created_at: DateTime<Utc>,
+}
+
+/// Request body for `POST /auth/register`
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct RegisterRequest {
+    pub email: String,
+    pub password: String,
+    pub display_name: Option<String>,
+}
+
+/// Request body for `POST /auth/login`
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct LoginRequest {
+    pub email: String,
+    pub password: String,
+}
+
+/// Request body for `POST /auth/refresh`
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct RefreshRequest {
+    pub refresh_token: String,
+}
+
+/// Response body for successful auth operations
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct AuthResponse {
+    pub access_token: String,
+    pub refresh_token: String,
+    pub token_type: String,
+    pub expires_in: i64,
+}
+
+/// JWT payload claims
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct TokenClaims {
+    /// Subject (user ID)
+    pub sub: String,
+    /// Issued at (unix timestamp)
+    pub iat: usize,
+    /// Expiration (unix timestamp)
+    pub exp: usize,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq, FromRow)]
