@@ -1,6 +1,11 @@
 [package]
 name = "crypto"
 version = "0.1.0"
-edition = "2026"
+edition = "2021"
 
 [dependencies]
+argon2 = { workspace = true }
+aes-gcm = { workspace = true }
+rand = { workspace = true }
+zeroize = { workspace = true }
+thiserror = { workspace = true }
