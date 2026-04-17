@@ -1,0 +1,11 @@
+# Third-Party Notices
+
+This project relies on several open source packages. 
+Detailed licensing notices for these packages are implicitly derived from their repositories and will be appended here upon major builds or releases.
+
+### Flutter / Dart
+Packages resolved via pub.dev are governed by the dependencies logged in `apps/flutter/pubspec.lock`.
+
+### Rust (Cargo)
+Crates resolved via Cargo are governed by the dependencies logged in `Cargo.lock`. 
+The repository employs `cargo-deny` to ensure only OSI-approved permissive licenses (like MIT and Apache-2.0) are utilized internally, preventing conflicts with the primary project license.

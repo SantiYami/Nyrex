@@ -1,0 +1,25 @@
+# System
+.DS_Store
+Thumbs.db
+.metadata
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.iml
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Rust / Cargo
+target/
+**/*.rs.bk
+
+# Flutter / Dart
+# (Note: Specific Flutter generated files are ignored inside apps/flutter/.gitignore)
+
+# AI Agents Context
+.agents/.cache/
