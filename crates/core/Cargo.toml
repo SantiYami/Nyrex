@@ -1,5 +1,5 @@
 [package]
-name = "core"
+name = "nyrex-core"
 version = "0.1.0"
 edition = "2021"
 
@@ -13,3 +13,4 @@ uuid = { workspace = true }
 chrono = { workspace = true }
 thiserror = { workspace = true }
 async-trait = { workspace = true }
+sqlx = { workspace = true, features = ["postgres"] }

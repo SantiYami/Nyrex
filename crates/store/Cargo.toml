@@ -4,3 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+nyrex-core = { path = "../core" }
+sqlx = { workspace = true, features = ["postgres", "runtime-tokio", "uuid", "chrono"] }
+thiserror = { workspace = true }
+async-trait = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }

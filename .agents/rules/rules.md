@@ -52,3 +52,10 @@ This file serves as a strict context guide for all AI agent modifications to the
   ```
 
 - This ensures automated compliance and clarity for long-term data portability.
+
+## 7. Secret Management
+
+- **No Hardcoded Secrets**: Never hardcode connection strings, API keys, or passwords in source code. 
+- **Environment Variables**: Use `dotenvy` in Rust and `.env` files for local configuration.
+- **Fail Fast**: If a required secret (like `DATABASE_URL`) is missing in a production-like environment, the app must `expect` or `panic` immediately instead of using unsafe defaults.
+- **Docker Defaults**: Use `${VAR:-default}` syntax in `docker-compose.yml` to provide non-sensitive defaults for local development only.

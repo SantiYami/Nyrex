@@ -3,29 +3,57 @@
 
 use crate::error::Result;
 use crate::models::{Note, SyncEvent, VaultEntry};
-use async_trait::async_trait;
 use uuid::Uuid;
-
-#[async_trait]
 pub trait NoteStore: Send + Sync {
-    async fn get_note(&self, user_id: Uuid, note_id: Uuid) -> Result<Option<Note>>;
-    async fn list_notes(&self, user_id: Uuid) -> Result<Vec<Note>>;
-    async fn create_note(&self, note: Note) -> Result<Note>;
-    async fn update_note(&self, note: Note) -> Result<Note>;
-    async fn delete_note(&self, user_id: Uuid, note_id: Uuid) -> Result<()>;
+    fn get_note(
+        &self,
+        user_id: Uuid,
+        note_id: Uuid,
+    ) -> impl std::future::Future<Output = Result<Option<Note>>> + Send;
+    fn list_notes(&self, user_id: Uuid) -> impl std::future::Future<Output = Result<Vec<Note>>> + Send;
+    fn create_note(&self, note: Note) -> impl std::future::Future<Output = Result<Note>> + Send;
+    fn update_note(&self, note: Note) -> impl std::future::Future<Output = Result<Note>> + Send;
+    fn delete_note(
+        &self,
+        user_id: Uuid,
+        note_id: Uuid,
+    ) -> impl std::future::Future<Output = Result<()>> + Send;
 }
 
-#[async_trait]
 pub trait VaultStore: Send + Sync {
-    async fn get_entry(&self, user_id: Uuid, entry_id: Uuid) -> Result<Option<VaultEntry>>;
-    async fn list_entries(&self, user_id: Uuid) -> Result<Vec<VaultEntry>>;
-    async fn create_entry(&self, entry: VaultEntry) -> Result<VaultEntry>;
-    async fn update_entry(&self, entry: VaultEntry) -> Result<VaultEntry>;
-    async fn delete_entry(&self, user_id: Uuid, entry_id: Uuid) -> Result<()>;
+    fn get_entry(
+        &self,
+        user_id: Uuid,
+        entry_id: Uuid,
+    ) -> impl std::future::Future<Output = Result<Option<VaultEntry>>> + Send;
+    fn list_entries(
+        &self,
+        user_id: Uuid,
+    ) -> impl std::future::Future<Output = Result<Vec<VaultEntry>>> + Send;
+    fn create_entry(
+        &self,
+        entry: VaultEntry,
+    ) -> impl std::future::Future<Output = Result<VaultEntry>> + Send;
+    fn update_entry(
+        &self,
+        entry: VaultEntry,
+    ) -> impl std::future::Future<Output = Result<VaultEntry>> + Send;
+    fn delete_entry(
+        &self,
+        user_id: Uuid,
+        entry_id: Uuid,
+    ) -> impl std::future::Future<Output = Result<()>> + Send;
 }
 
-#[async_trait]
 pub trait SyncEngine: Send + Sync {
-    async fn get_events_since(&self, user_id: Uuid, client_id: &str, since_id: i64) -> Result<Vec<SyncEvent>>;
-    async fn append_events(&self, events: Vec<SyncEvent>) -> Result<()>;
+    fn get_events_since(
+        &self,
+        user_id: Uuid,
+        client_id: &str,
+        since_id: i64,
+    ) -> impl std::future::Future<Output = Result<Vec<SyncEvent>>> + Send;
+    fn append_events(
+        &self,
+        events: Vec<SyncEvent>,
+    ) -> impl std::future::Future<Output = Result<()>> + Send;
 }

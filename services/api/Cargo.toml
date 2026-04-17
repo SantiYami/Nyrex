@@ -4,3 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+axum = { workspace = true }
+tokio = { workspace = true }
+nyrex-core = { path = "../../crates/core" }
+store = { path = "../../crates/store" }
+sqlx = { workspace = true }
+dotenvy = { workspace = true }

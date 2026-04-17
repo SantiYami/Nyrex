@@ -5,7 +5,9 @@ use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
-#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
+use sqlx::FromRow;
+
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, FromRow)]
 pub struct User {
     pub id: Uuid,
     pub email: String,
@@ -16,7 +18,7 @@ pub struct User {
     pub updated_at: DateTime<Utc>,
 }
 
-#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, FromRow)]
 pub struct Note {
     pub id: Uuid,
     pub user_id: Uuid,
@@ -30,7 +32,7 @@ pub struct Note {
     pub deleted_at: Option<DateTime<Utc>>,
 }
 
-#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, FromRow)]
 pub struct VaultEntry {
     pub id: Uuid,
     pub user_id: Uuid,
@@ -42,7 +44,7 @@ pub struct VaultEntry {
     pub deleted_at: Option<DateTime<Utc>>,
 }
 
-#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, FromRow)]
 pub struct SyncEvent {
     pub id: i64,
     pub user_id: Uuid,

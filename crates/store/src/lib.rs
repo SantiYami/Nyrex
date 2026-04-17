@@ -1,14 +1,6 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+// SPDX-License-Identifier: CC-BY-NC-SA-4.0
+// Copyright (c) 2026 SantiYami
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+pub mod pg;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub use pg::PgNyrexStore;
