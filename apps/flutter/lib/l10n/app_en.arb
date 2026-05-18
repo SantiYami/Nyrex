@@ -1,0 +1,408 @@
+{
+  "@@locale": "en",
+  "@@author": "SantiYami",
+  "appName": "Nyrex",
+  "@appName": {
+    "description": "The name of the application"
+  },
+  "tagline": "Your personal toolkit",
+  "@tagline": {
+    "description": "App tagline shown on the welcome screen"
+  },
+  "actionLogin": "Log in",
+  "@actionLogin": {
+    "description": "Primary login button label"
+  },
+  "actionRegister": "Create account",
+  "@actionRegister": {
+    "description": "Primary register button label"
+  },
+  "actionLogout": "Log out",
+  "@actionLogout": {
+    "description": "Button label to log out"
+  },
+  "actionContinue": "Continue",
+  "@actionContinue": {
+    "description": "Button label to continue"
+  },
+  "actionCancel": "Cancel",
+  "@actionCancel": {
+    "description": "Button label to cancel"
+  },
+  "actionSave": "Save",
+  "@actionSave": {
+    "description": "Button label to save"
+  },
+  "actionRetry": "Retry",
+  "@actionRetry": {
+    "description": "Button label to retry"
+  },
+  "labelEmail": "Email",
+  "@labelEmail": {
+    "description": "Label for email field"
+  },
+  "labelPassword": "Password",
+  "@labelPassword": {
+    "description": "Label for password field"
+  },
+  "labelConfirmPassword": "Confirm password",
+  "@labelConfirmPassword": {
+    "description": "Label for confirm password field"
+  },
+  "labelUsername": "Username",
+  "@labelUsername": {
+    "description": "Label for username field"
+  },
+  "hintEmail": "you@example.com",
+  "@hintEmail": {
+    "description": "Hint for email field"
+  },
+  "hintPassword": "••••••••",
+  "@hintPassword": {
+    "description": "Hint for password field"
+  },
+  "loginTitle": "Welcome back",
+  "@loginTitle": {
+    "description": "Title for the login screen"
+  },
+  "loginSubtitle": "Sign in to continue to Nyrex",
+  "@loginSubtitle": {
+    "description": "Subtitle for the login screen"
+  },
+  "loginNoAccount": "Don't have an account?",
+  "@loginNoAccount": {
+    "description": "Text indicating the user doesn't have an account"
+  },
+  "registerTitle": "Create your account",
+  "@registerTitle": {
+    "description": "Title for the register screen"
+  },
+  "registerSubtitle": "Join Nyrex — your data, your rules.",
+  "@registerSubtitle": {
+    "description": "Subtitle for the register screen"
+  },
+  "registerHaveAccount": "Already have an account?",
+  "@registerHaveAccount": {
+    "description": "Text indicating the user has an account"
+  },
+  "errorRequired": "This field is required",
+  "@errorRequired": {
+    "description": "Error message for required fields"
+  },
+  "errorInvalidEmail": "Enter a valid email address",
+  "@errorInvalidEmail": {
+    "description": "Error message for invalid email"
+  },
+  "errorPasswordTooShort": "Password must be at least 8 characters",
+  "@errorPasswordTooShort": {
+    "description": "Error message for password too short"
+  },
+  "errorPasswordMismatch": "Passwords do not match",
+  "@errorPasswordMismatch": {
+    "description": "Error message for password mismatch"
+  },
+  "errorUnexpected": "Something went wrong. Please try again.",
+  "@errorUnexpected": {
+    "description": "Error message for unexpected errors"
+  },
+  "errorNetworkUnavailable": "Cannot reach the server. Check your connection.",
+  "@errorNetworkUnavailable": {
+    "description": "Error message for network unavailable"
+  },
+  "errorInvalidCredentials": "Email or password is incorrect",
+  "@errorInvalidCredentials": {
+    "description": "Error message for invalid credentials"
+  },
+  "themeLabel": "Theme",
+  "@themeLabel": {
+    "description": "Theme label"
+  },
+  "themeDark": "Dark",
+  "@themeDark": {
+    "description": "Dark theme option"
+  },
+  "themeLight": "Light",
+  "@themeLight": {
+    "description": "Light theme option"
+  },
+  "themeAmoled": "AMOLED",
+  "@themeAmoled": {
+    "description": "AMOLED theme option"
+  },
+  "hintSearch": "Search...",
+  "@hintSearch": {
+    "description": "Search bar placeholder"
+  },
+  "hintCommandPalette": "Search or execute command...",
+  "@hintCommandPalette": {
+    "description": "Command palette search placeholder"
+  },
+  "hintQuickCapture": "Quick capture — type a task, add !priority #tags due:date...",
+  "@hintQuickCapture": {
+    "description": "Quick capture input placeholder"
+  },
+  "emptySearchTitle": "No results",
+  "@emptySearchTitle": {
+    "description": "Title shown when search returns no results"
+  },
+  "emptySearchDescription": "Try adjusting your search query.",
+  "@emptySearchDescription": {
+    "description": "Description shown when search returns no results"
+  },
+  "commandPaletteNavigate": "↑ ↓ navigate",
+  "@commandPaletteNavigate": {
+    "description": "Command palette keyboard hint for navigation"
+  },
+  "commandPaletteSelect": "↵ select",
+  "@commandPaletteSelect": {
+    "description": "Command palette keyboard hint for selection"
+  },
+  "commandPaletteGroupOther": "OTHER",
+  "@commandPaletteGroupOther": {
+    "description": "Default group name in command palette"
+  },
+  "syncStatusSynced": "SYNCED",
+  "@syncStatusSynced": {
+    "description": "Sync badge label when synced"
+  },
+  "syncStatusOffline": "OFFLINE",
+  "@syncStatusOffline": {
+    "description": "Sync badge label when offline"
+  },
+  "syncStatusSyncing": "Syncing...",
+  "@syncStatusSyncing": {
+    "description": "Sync indicator label when syncing"
+  },
+  "syncIndicatorSynced": "Synced",
+  "@syncIndicatorSynced": {
+    "description": "Sync indicator label when synced"
+  },
+  "syncIndicatorOffline": "Offline",
+  "@syncIndicatorOffline": {
+    "description": "Sync indicator label when offline"
+  },
+  "actionLaunch": "Launch",
+  "@actionLaunch": {
+    "description": "Button label to launch/open an entry"
+  },
+  "actionDeleteEntry": "Delete Entry",
+  "@actionDeleteEntry": {
+    "description": "Button label to delete a vault entry"
+  },
+  "labelTags": "TAGS",
+  "@labelTags": {
+    "description": "Section header for tags"
+  },
+  "labelMetadata": "METADATA",
+  "@labelMetadata": {
+    "description": "Section header for metadata"
+  },
+  "breadcrumbVaultAll": "VAULT  /  All entries",
+  "@breadcrumbVaultAll": {
+    "description": "Default breadcrumb for vault list pane"
+  },
+  "navHome": "HOME",
+  "@navHome": {
+    "description": "Navigation: Home"
+  },
+  "navToday": "TODAY",
+  "@navToday": {
+    "description": "Navigation: Today"
+  },
+  "navPinned": "PINNED",
+  "@navPinned": {
+    "description": "Navigation: Pinned"
+  },
+  "navModules": "MODULES",
+  "@navModules": {
+    "description": "Navigation: Modules"
+  },
+  "navViews": "VIEWS",
+  "@navViews": {
+    "description": "Navigation: Views"
+  },
+  "navProjects": "PROJECTS",
+  "@navProjects": {
+    "description": "Navigation: Projects"
+  },
+  "navCategories": "CATEGORIES",
+  "@navCategories": {
+    "description": "Navigation: Categories"
+  },
+  "navTags": "TAGS",
+  "@navTags": {
+    "description": "Navigation: Tags"
+  },
+  "moduleStudio": "Studio",
+  "@moduleStudio": {
+    "description": "Module: Studio"
+  },
+  "moduleFocusList": "Focus list",
+  "@moduleFocusList": {
+    "description": "Module: Focus list"
+  },
+  "moduleAgenda": "Agenda",
+  "@moduleAgenda": {
+    "description": "Module: Agenda"
+  },
+  "moduleNotes": "Notes",
+  "@moduleNotes": {
+    "description": "Module: Notes"
+  },
+  "moduleVault": "Vault",
+  "@moduleVault": {
+    "description": "Module: Vault"
+  },
+  "moduleTasks": "Tasks",
+  "@moduleTasks": {
+    "description": "Module: Tasks"
+  },
+  "moduleFinance": "Finance",
+  "@moduleFinance": {
+    "description": "Module: Finance"
+  },
+  "viewToday": "Today",
+  "@viewToday": {
+    "description": "View: Today"
+  },
+  "viewUpcoming": "Upcoming",
+  "@viewUpcoming": {
+    "description": "View: Upcoming"
+  },
+  "viewAll": "All",
+  "@viewAll": {
+    "description": "View: All"
+  },
+  "viewCompleted": "Completed",
+  "@viewCompleted": {
+    "description": "View: Completed"
+  },
+  "catLogins": "Logins",
+  "@catLogins": {
+    "description": "Category: Logins"
+  },
+  "catCards": "Cards",
+  "@catCards": {
+    "description": "Category: Cards"
+  },
+  "catSecureNotes": "Secure notes",
+  "@catSecureNotes": {
+    "description": "Category: Secure notes"
+  },
+  "catSSO": "SSO",
+  "@catSSO": {
+    "description": "Category: SSO"
+  },
+  "actionQuickCapture": "+ Quick capture",
+  "@actionQuickCapture": {
+    "description": "Action: Quick capture"
+  },
+  "actionNewEntry": "+ New entry",
+  "@actionNewEntry": {
+    "description": "Action: New entry"
+  },
+  "actionNewNote": "+ New note",
+  "@actionNewNote": {
+    "description": "Action: New note"
+  },
+  "greetingMorning": "Good morning",
+  "@greetingMorning": {
+    "description": "Greeting: Good morning"
+  },
+  "greetingAfternoon": "Good afternoon",
+  "@greetingAfternoon": {
+    "description": "Greeting: Good afternoon"
+  },
+  "greetingEvening": "Good evening",
+  "@greetingEvening": {
+    "description": "Greeting: Good evening"
+  },
+  "dashSystemLabel": "SYSTEM",
+  "@dashSystemLabel": {
+    "description": "Dashboard section label: System"
+  },
+  "dashFinancialPulse": "FINANCIAL PULSE",
+  "@dashFinancialPulse": {
+    "description": "Dashboard section label: Financial pulse"
+  },
+  "dashNetWorth": "Net Worth",
+  "@dashNetWorth": {
+    "description": "Dashboard widget label: Net worth"
+  },
+  "dashMonthlyBurn": "Monthly Burn",
+  "@dashMonthlyBurn": {
+    "description": "Dashboard widget label: Monthly burn"
+  },
+  "dashSavingsRate": "Savings Rate",
+  "@dashSavingsRate": {
+    "description": "Dashboard widget label: Savings rate"
+  },
+  "dashCashFlow": "CASH FLOW",
+  "@dashCashFlow": {
+    "description": "Dashboard section label: Cash flow"
+  },
+  "dashUnifiedAgenda": "UNIFIED AGENDA",
+  "@dashUnifiedAgenda": {
+    "description": "Dashboard section label: Unified agenda"
+  },
+  "dashBudgetItems": "BUDGET ITEMS",
+  "@dashBudgetItems": {
+    "description": "Dashboard section label: Budget items"
+  },
+  "dashSavingsGoals": "SAVINGS GOALS",
+  "@dashSavingsGoals": {
+    "description": "Dashboard section label: Savings goals"
+  },
+  "dashDebtExposure": "DEBT EXPOSURE",
+  "@dashDebtExposure": {
+    "description": "Dashboard section label: Debt exposure"
+  },
+  "dashQuickActions": "QUICK ACTIONS",
+  "@dashQuickActions": {
+    "description": "Dashboard section label: Quick actions"
+  },
+  "dashNewNote": "New Note",
+  "@dashNewNote": {
+    "description": "Dashboard action: New note"
+  },
+  "dashNewEntry": "New Entry",
+  "@dashNewEntry": {
+    "description": "Dashboard action: New entry"
+  },
+  "dashAddTask": "Add Task",
+  "@dashAddTask": {
+    "description": "Dashboard action: Add task"
+  },
+  "dashLogExpense": "Log Expense",
+  "@dashLogExpense": {
+    "description": "Dashboard action: Log expense"
+  },
+  "dashFocusTasks": "FOCUS TASKS",
+  "@dashFocusTasks": {
+    "description": "Dashboard section label: Focus tasks"
+  },
+  "dashRecentNotes": "RECENT NOTES",
+  "@dashRecentNotes": {
+    "description": "Dashboard section label: Recent notes"
+  },
+  "dashSystem": "SYSTEM",
+  "@dashSystem": {
+    "description": "Dashboard section label: System"
+  },
+  "dashStorage": "Storage",
+  "@dashStorage": {
+    "description": "Dashboard widget label: Storage"
+  },
+  "dashSync": "Sync",
+  "@dashSync": {
+    "description": "Dashboard widget label: Sync"
+  },
+  "dashEncryption": "Encryption",
+  "@dashEncryption": {
+    "description": "Dashboard widget label: Encryption"
+  },
+  "dashVersion": "Version",
+  "@dashVersion": {
+    "description": "Dashboard widget label: Version"
+  }
+}

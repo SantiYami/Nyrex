@@ -1,0 +1,408 @@
+{
+  "@@locale": "es",
+  "@@author": "SantiYami",
+  "appName": "Nyrex",
+  "@appName": {
+    "description": "El nombre de la aplicación"
+  },
+  "tagline": "Tu caja de herramientas personal",
+  "@tagline": {
+    "description": "Eslogan de la aplicación"
+  },
+  "actionLogin": "Iniciar sesión",
+  "@actionLogin": {
+    "description": "Botón de inicio de sesión"
+  },
+  "actionRegister": "Crear cuenta",
+  "@actionRegister": {
+    "description": "Botón de registro"
+  },
+  "actionLogout": "Cerrar sesión",
+  "@actionLogout": {
+    "description": "Botón de cierre de sesión"
+  },
+  "actionContinue": "Continuar",
+  "@actionContinue": {
+    "description": "Botón de continuar"
+  },
+  "actionCancel": "Cancelar",
+  "@actionCancel": {
+    "description": "Botón de cancelar"
+  },
+  "actionSave": "Guardar",
+  "@actionSave": {
+    "description": "Botón de guardar"
+  },
+  "actionRetry": "Reintentar",
+  "@actionRetry": {
+    "description": "Botón de reintentar"
+  },
+  "labelEmail": "Correo electrónico",
+  "@labelEmail": {
+    "description": "Etiqueta de correo electrónico"
+  },
+  "labelPassword": "Contraseña",
+  "@labelPassword": {
+    "description": "Etiqueta de contraseña"
+  },
+  "labelConfirmPassword": "Confirmar contraseña",
+  "@labelConfirmPassword": {
+    "description": "Etiqueta de confirmación de contraseña"
+  },
+  "labelUsername": "Nombre de usuario",
+  "@labelUsername": {
+    "description": "Etiqueta de nombre de usuario"
+  },
+  "hintEmail": "tu@ejemplo.com",
+  "@hintEmail": {
+    "description": "Indicador de correo electrónico"
+  },
+  "hintPassword": "••••••••",
+  "@hintPassword": {
+    "description": "Indicador de contraseña"
+  },
+  "loginTitle": "Bienvenido de nuevo",
+  "@loginTitle": {
+    "description": "Título de inicio de sesión"
+  },
+  "loginSubtitle": "Inicia sesión para continuar en Nyrex",
+  "@loginSubtitle": {
+    "description": "Subtítulo de inicio de sesión"
+  },
+  "loginNoAccount": "¿No tienes una cuenta?",
+  "@loginNoAccount": {
+    "description": "Mensaje de no tener cuenta"
+  },
+  "registerTitle": "Crea tu cuenta",
+  "@registerTitle": {
+    "description": "Título de registro"
+  },
+  "registerSubtitle": "Únete a Nyrex — tus datos, tus reglas.",
+  "@registerSubtitle": {
+    "description": "Subtítulo de registro"
+  },
+  "registerHaveAccount": "¿Ya tienes una cuenta?",
+  "@registerHaveAccount": {
+    "description": "Mensaje de ya tener cuenta"
+  },
+  "errorRequired": "Este campo es obligatorio",
+  "@errorRequired": {
+    "description": "Mensaje de campo obligatorio"
+  },
+  "errorInvalidEmail": "Introduce un correo válido",
+  "@errorInvalidEmail": {
+    "description": "Mensaje de correo inválido"
+  },
+  "errorPasswordTooShort": "La contraseña debe tener al menos 8 caracteres",
+  "@errorPasswordTooShort": {
+    "description": "Mensaje de contraseña corta"
+  },
+  "errorPasswordMismatch": "Las contraseñas no coinciden",
+  "@errorPasswordMismatch": {
+    "description": "Mensaje de contraseñas no coinciden"
+  },
+  "errorUnexpected": "Algo salió mal. Inténtalo de nuevo.",
+  "@errorUnexpected": {
+    "description": "Mensaje de error inesperado"
+  },
+  "errorNetworkUnavailable": "No se pudo conectar con el servidor. Revisa tu conexión.",
+  "@errorNetworkUnavailable": {
+    "description": "Mensaje de error de red no disponible"
+  },
+  "errorInvalidCredentials": "El correo o la contraseña son incorrectos",
+  "@errorInvalidCredentials": {
+    "description": "Mensaje de error de credenciales inválidas"
+  },
+  "themeLabel": "Tema",
+  "@themeLabel": {
+    "description": "Etiqueta del tema"
+  },
+  "themeDark": "Oscuro",
+  "@themeDark": {
+    "description": "Opción de tema oscuro"
+  },
+  "themeLight": "Claro",
+  "@themeLight": {
+    "description": "Opción de tema claro"
+  },
+  "themeAmoled": "AMOLED",
+  "@themeAmoled": {
+    "description": "Opción de tema AMOLED"
+  },
+  "hintSearch": "Buscar...",
+  "@hintSearch": {
+    "description": "Placeholder de barra de búsqueda"
+  },
+  "hintCommandPalette": "Buscar o ejecutar comando...",
+  "@hintCommandPalette": {
+    "description": "Placeholder de paleta de comandos"
+  },
+  "hintQuickCapture": "Captura rápida — escribe una tarea, añade !prioridad #etiquetas vence:fecha...",
+  "@hintQuickCapture": {
+    "description": "Placeholder de captura rápida"
+  },
+  "emptySearchTitle": "Sin resultados",
+  "@emptySearchTitle": {
+    "description": "Título de búsqueda vacía"
+  },
+  "emptySearchDescription": "Intenta ajustar tu búsqueda.",
+  "@emptySearchDescription": {
+    "description": "Descripción de búsqueda vacía"
+  },
+  "commandPaletteNavigate": "↑ ↓ navegar",
+  "@commandPaletteNavigate": {
+    "description": "Navegación en la paleta de comandos"
+  },
+  "commandPaletteSelect": "↵ seleccionar",
+  "@commandPaletteSelect": {
+    "description": "Selección en la paleta de comandos"
+  },
+  "commandPaletteGroupOther": "OTROS",
+  "@commandPaletteGroupOther": {
+    "description": "Grupo de comandos otros"
+  },
+  "syncStatusSynced": "SINCRONIZADO",
+  "@syncStatusSynced": {
+    "description": "Estado de sincronización: sincronizado"
+  },
+  "syncStatusOffline": "SIN CONEXIÓN",
+  "@syncStatusOffline": {
+    "description": "Estado de sincronización: sin conexión"
+  },
+  "syncStatusSyncing": "Sincronizando...",
+  "@syncStatusSyncing": {
+    "description": "Estado de sincronización: sincronizando"
+  },
+  "syncIndicatorSynced": "Sincronizado",
+  "@syncIndicatorSynced": {
+    "description": "Indicador de sincronización: sincronizado"
+  },
+  "syncIndicatorOffline": "Sin conexión",
+  "@syncIndicatorOffline": {
+    "description": "Indicador de sincronización: sin conexión"
+  },
+  "actionLaunch": "Abrir",
+  "@actionLaunch": {
+    "description": "Botón de abrir"
+  },
+  "actionDeleteEntry": "Eliminar entrada",
+  "@actionDeleteEntry": {
+    "description": "Botón de eliminar entrada"
+  },
+  "labelTags": "ETIQUETAS",
+  "@labelTags": {
+    "description": "Etiqueta de etiquetas"
+  },
+  "labelMetadata": "METADATOS",
+  "@labelMetadata": {
+    "description": "Etiqueta de metadatos"
+  },
+  "breadcrumbVaultAll": "BÓVEDA  /  Todas las entradas",
+  "@breadcrumbVaultAll": {
+    "description": "Ruta de navegación: bóveda / todas las entradas"
+  },
+  "navHome": "INICIO",
+  "@navHome": {
+    "description": "Navegación: Inicio"
+  },
+  "navToday": "HOY",
+  "@navToday": {
+    "description": "Navegación: Hoy"
+  },
+  "navPinned": "FIJADAS",
+  "@navPinned": {
+    "description": "Navegación: Fijadas"
+  },
+  "navModules": "MÓDULOS",
+  "@navModules": {
+    "description": "Navegación: Módulos"
+  },
+  "navViews": "VISTAS",
+  "@navViews": {
+    "description": "Navegación: Vistas"
+  },
+  "navProjects": "PROYECTOS",
+  "@navProjects": {
+    "description": "Navegación: Proyectos"
+  },
+  "navCategories": "CATEGORÍAS",
+  "@navCategories": {
+    "description": "Navegación: Categorías"
+  },
+  "navTags": "ETIQUETAS",
+  "@navTags": {
+    "description": "Navegación: Etiquetas"
+  },
+  "moduleStudio": "Estudio",
+  "@moduleStudio": {
+    "description": "Módulo: Estudio"
+  },
+  "moduleFocusList": "Lista de enfoque",
+  "@moduleFocusList": {
+    "description": "Módulo: Lista de enfoque"
+  },
+  "moduleAgenda": "Agenda",
+  "@moduleAgenda": {
+    "description": "Módulo: Agenda"
+  },
+  "moduleNotes": "Notas",
+  "@moduleNotes": {
+    "description": "Módulo: Notas"
+  },
+  "moduleVault": "Bóveda",
+  "@moduleVault": {
+    "description": "Módulo: Bóveda"
+  },
+  "moduleTasks": "Tareas",
+  "@moduleTasks": {
+    "description": "Módulo: Tareas"
+  },
+  "moduleFinance": "Finanzas",
+  "@moduleFinance": {
+    "description": "Módulo: Finanzas"
+  },
+  "viewToday": "Hoy",
+  "@viewToday": {
+    "description": "Vista: Hoy"
+  },
+  "viewUpcoming": "Próximos",
+  "@viewUpcoming": {
+    "description": "Vista: Próximos"
+  },
+  "viewAll": "Todas",
+  "@viewAll": {
+    "description": "Vista: Todas"
+  },
+  "viewCompleted": "Completadas",
+  "@viewCompleted": {
+    "description": "Vista: Completadas"
+  },
+  "catLogins": "Inicios de sesión",
+  "@catLogins": {
+    "description": "Categoría: Inicios de sesión"
+  },
+  "catCards": "Tarjetas",
+  "@catCards": {
+    "description": "Categoría: Tarjetas"
+  },
+  "catSecureNotes": "Notas seguras",
+  "@catSecureNotes": {
+    "description": "Categoría: Notas seguras"
+  },
+  "catSSO": "SSO",
+  "@catSSO": {
+    "description": "Categoría: SSO"
+  },
+  "actionQuickCapture": "+ Captura rápida",
+  "@actionQuickCapture": {
+    "description": "Acción: Captura rápida"
+  },
+  "actionNewEntry": "+ Nueva entrada",
+  "@actionNewEntry": {
+    "description": "Acción: Nueva entrada"
+  },
+  "actionNewNote": "+ Nueva nota",
+  "@actionNewNote": {
+    "description": "Acción: Nueva nota"
+  },
+  "greetingMorning": "Buenos días",
+  "@greetingMorning": {
+    "description": "Saludo matutino"
+  },
+  "greetingAfternoon": "Buenas tardes",
+  "@greetingAfternoon": {
+    "description": "Saludo vespertino"
+  },
+  "greetingEvening": "Buenas noches",
+  "@greetingEvening": {
+    "description": "Saludo nocturno"
+  },
+  "dashSystemLabel": "SISTEMA",
+  "@dashSystemLabel": {
+    "description": "Sección del dashboard: Sistema"
+  },
+  "dashFinancialPulse": "Pulso financiero",
+  "@dashFinancialPulse": {
+    "description": "Widget del dashboard: Pulso financiero"
+  },
+  "dashNetWorth": "Patrimonio neto",
+  "@dashNetWorth": {
+    "description": "Widget del dashboard: Patrimonio neto"
+  },
+  "dashMonthlyBurn": "Gasto mensual",
+  "@dashMonthlyBurn": {
+    "description": "Widget del dashboard: Gasto mensual"
+  },
+  "dashSavingsRate": "Tasa de ahorro",
+  "@dashSavingsRate": {
+    "description": "Widget del dashboard: Tasa de ahorro"
+  },
+  "dashCashFlow": "Flujo de caja",
+  "@dashCashFlow": {
+    "description": "Widget del dashboard: Flujo de caja"
+  },
+  "dashUnifiedAgenda": "Agenda unificada",
+  "@dashUnifiedAgenda": {
+    "description": "Widget del dashboard: Agenda unificada"
+  },
+  "dashBudgetItems": "Presupuesto",
+  "@dashBudgetItems": {
+    "description": "Widget del dashboard: Presupuesto"
+  },
+  "dashSavingsGoals": "Metas de ahorro",
+  "@dashSavingsGoals": {
+    "description": "Widget del dashboard: Metas de ahorro"
+  },
+  "dashDebtExposure": "Exposición a deudas",
+  "@dashDebtExposure": {
+    "description": "Widget del dashboard: Exposición a deudas"
+  },
+  "dashQuickActions": "Acciones rápidas",
+  "@dashQuickActions": {
+    "description": "Widget del dashboard: Acciones rápidas"
+  },
+  "dashNewNote": "Nota nueva",
+  "@dashNewNote": {
+    "description": "Widget del dashboard: Nota nueva"
+  },
+  "dashNewEntry": "Entrada nueva",
+  "@dashNewEntry": {
+    "description": "Widget del dashboard: Entrada nueva"
+  },
+  "dashAddTask": "Agregar tarea",
+  "@dashAddTask": {
+    "description": "Widget del dashboard: Agregar tarea"
+  },
+  "dashLogExpense": "Registrar gasto",
+  "@dashLogExpense": {
+    "description": "Widget del dashboard: Registrar gasto"
+  },
+  "dashFocusTasks": "Tareas de enfoque",
+  "@dashFocusTasks": {
+    "description": "Widget del dashboard: Tareas de enfoque"
+  },
+  "dashRecentNotes": "Notas recientes",
+  "@dashRecentNotes": {
+    "description": "Widget del dashboard: Notas recientes"
+  },
+  "dashSystem": "Sistema",
+  "@dashSystem": {
+    "description": "Widget del dashboard: Sistema"
+  },
+  "dashStorage": "Almacenamiento",
+  "@dashStorage": {
+    "description": "Widget del dashboard: Almacenamiento"
+  },
+  "dashSync": "Sincronización",
+  "@dashSync": {
+    "description": "Widget del dashboard: Sincronización"
+  },
+  "dashEncryption": "Cifrado",
+  "@dashEncryption": {
+    "description": "Widget del dashboard: Cifrado"
+  },
+  "dashVersion": "Versión",
+  "@dashVersion": {
+    "description": "Widget del dashboard: Versión"
+  }
+}
