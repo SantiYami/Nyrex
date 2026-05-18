@@ -66,6 +66,8 @@ async fn main() {
     // Protected routes (auth required)
     let protected_routes = Router::new()
         .route("/me", get(me))
+        .route("/sync/notes", post(routes::sync::sync_notes))
+        .route("/sync/vault_entries", post(routes::sync::upload_vault_entry))
         .layer(axum_mw::from_fn_with_state(
             state.clone(),
             middleware::auth::require_auth,

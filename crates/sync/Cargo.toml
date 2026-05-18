@@ -1,6 +1,9 @@
 [package]
-name = "sync"
+name = "nyrex-sync"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+serde = { workspace = true, features = ["derive"] }
+uuid = { workspace = true }
+nyrex-core = { path = "../core" }

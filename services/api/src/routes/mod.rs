@@ -2,3 +2,4 @@
 // Copyright (c) 2026 SantiYami
 
 pub mod auth;
+pub mod sync;

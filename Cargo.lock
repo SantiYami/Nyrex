@@ -70,6 +70,7 @@ dependencies = [
  "dotenvy",
  "jsonwebtoken",
  "nyrex-core",
+ "nyrex-sync",
  "rand",
  "serde",
  "serde_json",
@@ -1167,6 +1168,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "nyrex-sync"
+version = "0.1.0"
+dependencies = [
+ "nyrex-core",
+ "serde",
+ "uuid",
+]
+
+[[package]]
 name = "once_cell"
 version = "1.21.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1873,10 +1883,6 @@ dependencies = [
  "quote",
  "unicode-ident",
 ]
-
-[[package]]
-name = "sync"
-version = "0.1.0"
 
 [[package]]
 name = "sync_wrapper"
