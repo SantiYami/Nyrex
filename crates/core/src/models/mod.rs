@@ -74,11 +74,12 @@ pub struct TokenClaims {
 pub struct Note {
     pub id: Uuid,
     pub user_id: Uuid,
-    pub title: String,
-    pub content: String,
+    pub title_cipher: Vec<u8>,
+    pub content_cipher: Vec<u8>,
+    pub nonce: Vec<u8>,
+    pub version: i32,
     pub format: String,
     pub tags: Vec<String>,
-    pub is_encrypted: bool,
     pub created_at: DateTime<Utc>,
     pub updated_at: DateTime<Utc>,
     pub deleted_at: Option<DateTime<Utc>>,
@@ -87,13 +88,13 @@ pub struct Note {
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq, FromRow)]
 pub struct VaultEntry {
     pub id: Uuid,
+    pub note_id: Uuid,
     pub user_id: Uuid,
-    pub ciphertext: Vec<u8>,
+    pub file_cipher: Vec<u8>,
     pub nonce: Vec<u8>,
-    pub hint: Option<String>,
+    pub mime_type: Option<String>,
+    pub file_size: i32,
     pub created_at: DateTime<Utc>,
-    pub updated_at: DateTime<Utc>,
-    pub deleted_at: Option<DateTime<Utc>>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq, FromRow)]
@@ -119,11 +120,12 @@ mod tests {
         let note = Note {
             id: Uuid::new_v4(),
             user_id: Uuid::new_v4(),
-            title: "Test Note".to_string(),
-            content: "Hello world".to_string(),
+            title_cipher: vec![1, 2, 3],
+            content_cipher: vec![4, 5, 6],
+            nonce: vec![0; 12],
+            version: 1,
             format: "markdown".to_string(),
             tags: vec!["test".to_string()],
-            is_encrypted: false,
             created_at: Utc::now(),
             updated_at: Utc::now(),
             deleted_at: None,
