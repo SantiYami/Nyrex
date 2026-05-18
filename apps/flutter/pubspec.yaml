@@ -1,5 +1,5 @@
 name: nyrex
-description: "A new Flutter project."
+description: "Swiss Army knife personal toolkit. Local-first, E2E encrypted."
 publish_to: 'none'
 version: 0.1.0+1
 
@@ -9,11 +9,51 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
 
+  # State Management
+  flutter_riverpod: ^3.3.1
+  riverpod_annotation: ^4.0.2
+
+  # Navigation
+  go_router: ^17.2.2
+
+  # Networking
+  dio: ^5.8.0+1
+
+  # Local Database
+  drift: ^2.31.0
+  drift_flutter: ^0.2.8
+  path_provider: ^2.1.5
+  path: ^1.9.1
+  shared_preferences: ^2.3.5
+
+  # Utilities
+  uuid: ^4.5.1
+  intl: ^0.20.2
+  json_annotation: ^4.11.0
+
+  freezed_annotation: any
+  cryptography: ^2.9.0
+  cryptography_flutter: ^2.3.4
+  flutter_markdown_plus: ^1.0.7
+  file_picker: ^11.0.2
+  logger: ^2.7.0
+  google_fonts: ^8.1.0
+  fl_chart: ^1.2.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
 
+  # Code Generation
+  build_runner: ^2.13.1
+  riverpod_generator: ^4.0.3
+  drift_dev: ^2.31.0
+  riverpod_lint: ^3.1.3
+  json_serializable: ^6.11.0
+
 flutter:
   uses-material-design: true
+  generate: true
